@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Art de la Table | แนะนำอาหารฝรั่งเศส & อิตาลี</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Prompt:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-stone-800 antialiased transition-colors duration-300 selection:bg-amber-500 selection:text-white dark:bg-stone-950 dark:text-stone-100">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-40 border-b border-stone-200 bg-white/90 backdrop-blur-md transition-colors duration-300 dark:border-stone-800/80 dark:bg-stone-950/90">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#" data-page="home" class="nav-page-link font-serif-title text-2xl font-bold tracking-wider text-amber-600 dark:text-amber-400">
+          L'ART DE LA TABLE
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-2 sm:gap-6">
+          <button
+            data-page="home"
+            class="nav-page-btn active rounded-lg px-3 py-1.5 text-sm font-medium text-amber-600 bg-amber-50 dark:bg-amber-500/10 dark:text-amber-400 transition"
+          >
+            หน้าหลัก
+          </button>
+          <button
+            data-page="gallery"
+            class="nav-page-btn rounded-lg px-3 py-1.5 text-sm font-medium text-stone-600 hover:text-amber-600 dark:text-stone-300 dark:hover:text-amber-400 transition"
+          >
+            แกลเลอรี & คำแนะนำ
+          </button>
+
+          <!-- Dark Mode Toggle Button -->
+          <button
+            id="theme-toggle"
+            aria-label="สลับโหมดมืด/สว่าง"
+            class="ml-2 flex items-center gap-1.5 rounded-full border border-stone-300 bg-stone-100 px-3 py-1.5 text-xs font-medium text-stone-700 transition hover:border-amber-500 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200"
+          >
+            <span id="theme-icon">🌙</span>
+            <span id="theme-text" class="hidden sm:inline">โหมดมืด</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- PAGE 1: HOME VIEW                          -->
+    <!-- ========================================== -->
+    <main id="page-home">
+      <!-- Hero Section -->
+      <header class="relative overflow-hidden border-b border-stone-200 bg-stone-50 py-24 transition-colors duration-300 md:py-32 dark:border-stone-800 dark:bg-stone-950">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-200/40 via-transparent to-transparent dark:from-amber-900/25"></div>
+        <div class="relative mx-auto max-w-5xl px-6 text-center">
+          <span class="mb-4 inline-block rounded-full border border-amber-300 bg-amber-50 px-4 py-1 text-xs tracking-widest text-amber-700 uppercase dark:border-stone-700 dark:bg-stone-900/80 dark:text-amber-400">
+            French Haute Cuisine & Italian Trattoria
+          </span>
+          <h1 class="font-serif-title text-5xl font-bold tracking-tight text-stone-900 md:text-7xl dark:text-white">
+            ศิลปะแห่งรสชาติ <span class="italic text-amber-600 dark:text-amber-400">ฝรั่งเศส</span> &
+            <span class="italic text-amber-600 dark:text-amber-400">อิตาลี</span>
+          </h1>
+          <p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-stone-600 md:text-lg dark:text-stone-400">
+            สัมผัสความพิถีพิถันของซอสและเทคนิคการปรุงระดับตำนานจากฝรั่งเศส ผสานกับเสน่ห์ของวัตถุดิบสดใหม่และรสชาติที่อบอุ่นจากอิตาลี
+          </p>
+          <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="#menu" class="rounded-lg bg-amber-600 px-6 py-3 font-medium text-white transition hover:bg-amber-500 dark:bg-amber-500 dark:text-stone-950 dark:hover:bg-amber-400">
+              ดูรายการอาหารแนะนำ
+            </a>
+            <button
+              data-page="gallery"
+              class="nav-page-link rounded-lg border border-stone-300 bg-white px-6 py-3 font-medium text-stone-700 transition hover:border-amber-500 hover:text-amber-600 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:border-stone-500"
+            >
+              ชมรูปภาพและคำแนะนำอาหาร →
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Intro: France vs Italy -->
+      <section id="intro" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition hover:border-blue-400 dark:border-stone-800 dark:bg-stone-900/50 dark:hover:border-blue-500/40">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="text-xs font-semibold tracking-widest text-blue-600 uppercase dark:text-blue-400">La Cuisine Française</span>
+              <span class="rounded bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">ฝรั่งเศส</span>
+            </div>
+            <h2 class="font-serif-title text-3xl font-bold text-stone-900 dark:text-white">ความประณีตและซอสระดับตำนาน</h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+              หัวใจของอาหารฝรั่งเศสอยู่ที่เทคนิคการปรุง การเคี่ยวซอสที่ซับซ้อน การใช้เนย ครีม ไวน์ และสมุนไพรเพื่อดึงรสชาติที่ลุ่มลึกออกมาอย่างสมดุล
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-stone-700 dark:text-stone-300">
+              <li>• เด่นเรื่องการตุ๋นไฟอ่อน (Braising) และการอบ</li>
+              <li>• ซอสหลัก 5 ชนิด (Mother Sauces) เป็นรากฐานสำคัญ</li>
+              <li>• นิยมทานคู่กับขนมปังบาแก็ต ชีส และไวน์</li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition hover:border-emerald-400 dark:border-stone-800 dark:bg-stone-900/50 dark:hover:border-emerald-500/40">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="text-xs font-semibold tracking-widest text-emerald-600 uppercase dark:text-emerald-400">La Cucina Italiana</span>
+              <span class="rounded bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300">อิตาลี</span>
+            </div>
+            <h2 class="font-serif-title text-3xl font-bold text-stone-900 dark:text-white">ชูรสวัตถุดิบสดใหม่และเรียบง่าย</h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+              อาหารอิตาลีเน้นคุณภาพของวัตถุดิบตามฤดูกาลเป็นหลัก ปรุงแต่งไม่ซับซ้อนเพื่อให้รสชาติธรรมชาติของมะเขือเทศ น้ำมันมะกอก กระเทียม และชีสโดดเด่นที่สุด
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-stone-700 dark:text-stone-300">
+              <li>• โดดเด่นเรื่องเส้นพาสต้าสด รีซอตโต้ และพิซซ่าเตาถ่าน</li>
+              <li>• ใช้น้ำมันมะกอกบริสุทธิ์ (Extra Virgin Olive Oil) เป็นหลัก</li>
+              <li>• รสชาติชัดเจน เข้าถึงง่าย และให้ความรู้สึกอบอุ่น</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Showcase Section -->
+      <section id="menu" class="border-t border-stone-200 bg-stone-50/70 py-20 transition-colors duration-300 dark:border-stone-800/80 dark:bg-stone-900/30">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <span class="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">Signature Dishes</span>
+              <h2 class="font-serif-title mt-1 text-4xl font-bold text-stone-900 dark:text-white">เมนูแนะนำที่ไม่ควรพลาด</h2>
+            </div>
+
+            <div class="flex flex-wrap gap-2" id="filter-buttons">
+              <button data-filter="all" class="filter-btn rounded-full bg-amber-600 px-5 py-2 text-sm font-medium text-white transition dark:bg-amber-500 dark:text-stone-950">
+                ทั้งหมด (8)
+              </button>
+              <button data-filter="france" class="filter-btn rounded-full border border-stone-300 bg-white px-5 py-2 text-sm font-medium text-stone-600 transition hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-stone-500">
+                อาหารฝรั่งเศส (4)
+              </button>
+              <button data-filter="italy" class="filter-btn rounded-full border border-stone-300 bg-white px-5 py-2 text-sm font-medium text-stone-600 transition hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-stone-500">
+                อาหารอิตาลี (4)
+              </button>
+            </div>
+          </div>
+
+          <div id="dish-grid" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <!-- Dining Culture Section -->
+      <section id="pairing" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 md:p-12 dark:border-stone-800 dark:bg-gradient-to-br dark:from-stone-900 dark:to-stone-950">
+          <h2 class="font-serif-title text-3xl font-bold text-stone-900 md:text-4xl dark:text-white">ลำดับมื้ออาหารแบบยุโรป</h2>
+          <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">ความแตกต่างของโครงสร้างมื้ออาหารระหว่างสองประเทศ</p>
+
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <div class="border-l-2 border-blue-500 pl-5 dark:border-blue-400">
+              <h3 class="font-semibold text-blue-700 dark:text-blue-300">คอร์สอาหารฝรั่งเศส (French Course)</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+                1. <strong>Entrée</strong> (จานเรียกน้ำย่อย) → 2. <strong>Plat Principal</strong> (จานหลักเนื้อสัตว์/ปลา) → 3. <strong>Fromage</strong> (ชีส) → 4. <strong>Dessert</strong> (ของหวานและกาแฟ)
+              </p>
+            </div>
+            <div class="border-l-2 border-emerald-500 pl-5 dark:border-emerald-400">
+              <h3 class="font-semibold text-emerald-700 dark:text-emerald-300">คอร์สอาหารอิตาลี (Italian Meal)</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+                1. <strong>Antipasto</strong> (ของทานเล่น) → 2. <strong>Primo</strong> (พาสต้า/รีซอตโต้) → 3. <strong>Secondo</strong> (จานเนื้อสัตว์) → 4. <strong>Dolce</strong> (ของหวานเช่น ทีรามิสุ)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- PAGE 2: GALLERY & RECOMMENDATIONS VIEW     -->
+    <!-- ========================================== -->
+    <main id="page-gallery" class="hidden">
+      <!-- Gallery Header -->
+      <header class="border-b border-stone-200 bg-stone-50 py-16 text-center transition-colors duration-300 dark:border-stone-800 dark:bg-stone-900/40">
+        <div class="mx-auto max-w-4xl px-6">
+          <span class="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">Visual Gastronomy Guide</span>
+          <h1 class="font-serif-title mt-2 text-4xl font-bold text-stone-900 md:text-6xl dark:text-white">
+            แกลเลอรีรูปภาพ & คำแนะนำเมนู
+          </h1>
+          <p class="mt-4 text-sm text-stone-600 md:text-base dark:text-stone-400">
+            สำรวจหน้าตาอาหารและเคล็ดลับการทานเมนูต้นตำรับ เริ่มต้นจากความอบอุ่นของอิตาลี และเลื่อนลงไปพบกับความประณีตของฝรั่งเศส
+          </p>
+          <div class="mt-6 flex justify-center gap-3">
+            <a href="#italy-showcase" class="rounded-full bg-emerald-600 px-4 py-1.5 text-xs font-medium text-white hover:bg-emerald-500">
+              ส่วนที่ 1: อาหารอิตาลี
+            </a>
+            <a href="#france-showcase" class="rounded-full bg-blue-600 px-4 py-1.5 text-xs font-medium text-white hover:bg-blue-500">
+              ส่วนที่ 2: อาหารฝรั่งเศส ↓
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section 1: Italian Food Gallery -->
+      <section id="italy-showcase" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="mb-12 border-b border-stone-200 pb-6 dark:border-stone-800">
+          <span class="rounded bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-300">
+            ITALIAN CUISINE
+          </span>
+          <h2 class="font-serif-title mt-3 text-4xl font-bold text-stone-900 dark:text-white">
+            อาหารอิตาลี (La Cucina Italiana)
+          </h2>
+          <p class="mt-1 text-sm text-stone-600 dark:text-stone-400">
+            ภาพบรรยากาศและคำแนะนำสำหรับเมนูเส้น พิซซ่า และของหวานสไตล์อิตาเลียนแท้
+          </p>
+        </div>
+
+        <!-- Rendered by JS (Alternating Image & Text) -->
+        <div id="italy-gallery-list" class="space-y-16"></div>
+      </section>
+
+      <!-- Section 2: French Food Gallery (Scroll down to see) -->
+      <section id="france-showcase" class="border-t border-stone-200 bg-stone-50/60 py-20 transition-colors duration-300 dark:border-stone-800 dark:bg-stone-900/20">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="mb-12 border-b border-stone-200 pb-6 dark:border-stone-800">
+            <span class="rounded bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800 dark:bg-blue-500/20 dark:text-blue-300">
+              FRENCH CUISINE
+            </span>
+            <h2 class="font-serif-title mt-3 text-4xl font-bold text-stone-900 dark:text-white">
+              อาหารฝรั่งเศส (La Cuisine Française)
+            </h2>
+            <p class="mt-1 text-sm text-stone-600 dark:text-stone-400">
+              เมนูระดับตำนานที่มาพร้อมเทคนิคการปรุงและคำแนะนำการจับคู่รสชาติ
+            </p>
+          </div>
+
+          <!-- Rendered by JS (Alternating Image & Text) -->
+          <div id="france-gallery-list" class="space-y-16"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 bg-white py-8 text-center text-xs text-stone-500 transition-colors duration-300 dark:border-stone-800 dark:bg-stone-950">
+      <p>L'Art de la Table — เว็บไซต์แนะนำวัฒนธรรมอาหารฝรั่งเศสและอิตาลี</p>
+    </footer>
+
+    <!-- Modal for Dish Details -->
+    <div id="dish-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+      <div class="relative w-full max-w-lg rounded-2xl border border-stone-200 bg-white p-6 shadow-2xl md:p-8 dark:border-stone-700 dark:bg-stone-900">
+        <button id="close-modal" class="absolute top-4 right-4 rounded-lg p-2 text-stone-500 hover:bg-stone-100 hover:text-stone-900 dark:text-stone-400 dark:hover:bg-stone-800 dark:hover:text-white">
+          ✕
+        </button>
+        <span id="modal-origin" class="rounded px-2.5 py-0.5 text-xs font-medium"></span>
+        <h3 id="modal-title" class="font-serif-title mt-3 text-3xl font-bold text-stone-900 dark:text-white"></h3>
+        <p id="modal-subtitle" class="text-sm font-medium text-amber-600 dark:text-amber-400"></p>
+        <p id="modal-desc" class="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-300"></p>
+        <div class="mt-5 rounded-xl bg-stone-100 p-4 dark:bg-stone-950/70">
+          <h4 class="text-xs font-semibold tracking-wider text-stone-500 uppercase dark:text-stone-400">วัตถุดิบหลัก</h4>
+          <p id="modal-ingredients" class="mt-1 text-sm text-stone-800 dark:text-stone-200"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
